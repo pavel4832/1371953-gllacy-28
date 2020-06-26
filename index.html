@@ -11,23 +11,101 @@
 
   <body class="page-body page-wrapper-1">
     <header class="main-header container">
-      <a class="main-logo">
-        <img src="img/logo.svg" height="64" width="154" alt="Логотип">
-      </a>
+      <img class="index-logo" src="img/logo.svg" height="64" width="154" alt="Логотип">
 
       <nav class="header-menu">
         <ul class="header-menu-list">
-          <li class="header-menu-item"><a href="catalog.html">Каталог</a></li>
-          <li class="header-menu-item"><a href="delivery.html">Доставка и оплата</a></li>
-          <li class="header-menu-item"><a href="about.html">О компании</a></li>
+          <li class="header-menu-item">
+            <a class="hidden-menu-open" href="#">Каталог</a>
+
+            <div class="hidden-menu">
+              <h2 class="hidden-menu-title">Новинки</h2>
+
+              <ul class="hidden-menu-list">
+                <li class="hidden-menu-item">
+                  <a href="catalog.html">Сливочное</a>
+                </li>
+
+                <li class="hidden-menu-item">
+                  <a href="#">Щербеты</a>
+                </li>
+
+                <li class="hidden-menu-item">
+                  <a href="#">Фруктовый лед</a>
+                </li>
+
+                <li class="hidden-menu-item">
+                  <a href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="header-menu-item">
+            <a href="#">Доставка и оплата</a>
+          </li>
+
+          <li class="header-menu-item">
+            <a href="#">О компании</a>
+          </li>
         </ul>
-
-        <a href="#" aria-label="search"></a>
-
-        <a href="#" aria-label="login"></a>
-
-        <a href="#" aria-label="basket"></a>
       </nav>
+
+      <ul class="header-login-menu">
+        <li class="login-menu-item">
+          <form action="https://echo.htmlacademy.ru" class="search-form" method="get">
+            <label for="search-on-document" class="visually-hidden">Поиск на сайте</label>
+
+            <input id="search-on-document" class="search-field visually-hidden" type="search" placeholder="Крем-брюле">
+
+            <button class="search-btn" type="submit" aria-label="Найти"></button>
+          </form>
+        </li>
+
+        <li class="login-menu-item">
+          <button class="login-btn" type="button">Вход</button>
+
+          <form action="https://echo.htmlacademy.ru" class="login-form visually-hidden" method="get">
+            <label for="login-email" class="visually-hidden">Вход в личный кабинет</label>
+
+            <input id="login-email" class="text-field" type="email" placeholder="email@example.com">
+
+            <label for="login-password" class="visually-hidden">Поиск на сайте</label>
+
+            <input id="login-password" class="text-field" type="email" placeholder="......">
+
+            <button class="search-btn" type="submit">Войти</button>
+
+            <div class="login-reff">
+              <a href="#">Забыли пароль?</a>
+
+              <a href="#">Новая регистрация</a>
+            </div>
+          </form>
+        </li>
+
+        <li class="login-menu-item">
+          <button class="basket-btn" type="button">Пусто</button>
+
+          <form action="https://echo.htmlacademy.ru" class="basket-form visually-hidden" method="get">
+            <ul class="product-items-list">
+              <li class="product-item">
+
+              </li>
+
+              <li class="product-item">
+
+              </li>
+            </ul>
+
+            <span class="total">Итого:</span>
+
+            <span class="total-price">750 руб.</span>
+
+            <button class="search-btn" type="submit">Оформить заказ</button>
+          </form>
+         </li>
+      </ul>
 
       <div class="header-contact">
         <p>с 10 до 20, ежедневно</p>
