@@ -27,8 +27,8 @@
 
       <nav class="header-menu">
         <ul class="header-menu-list">
-          <li class="header-menu-item">
-            <a class="header-menu-reff hidden-menu-open current-page" href="#">Каталог</a>
+          <li class="header-menu-item  current-page">
+            <a class="header-menu-reff hidden-menu-open" href="#">Каталог</a>
 
             <div class="hidden-menu">
               <h2 class="hidden-menu-title">Новинки</h2>
@@ -66,11 +66,11 @@
       <ul class="header-login-menu">
         <li class="login-menu-item">
           <form action="https://echo.htmlacademy.ru" class="search-form" method="get">
+            <a class="login-menu-btn search-btn" aria-label="Найти на сайте"></a>
+
             <label for="search-on-document" class="visually-hidden">Поиск на сайте</label>
 
             <input id="search-on-document" class="search-field" type="search" placeholder="Крем-брюле">
-
-            <button class="login-menu-btn search-btn" type="submit" aria-label="Найти"></button>
           </form>
         </li>
 
@@ -99,9 +99,11 @@
         <li class="login-menu-item">
           <button class="login-menu-btn basket-btn has-product" type="button">2 товара</button>
 
-          <form action="https://echo.htmlacademy.ru" class="basket-form has-product" method="get">
+          <div class="basket-form has-product">
             <ul class="product-items-list">
               <li class="product-item-basket">
+                <button class="remove-btn" type="button"></button>
+
                 <img src="img/item_1_small.png" height="33" width="33" alt="мини фото товара 1"/>
 
                 <span>Пломбир с апельсиновым джемом</span>
@@ -114,6 +116,8 @@
               </li>
 
               <li class="product-item-basket">
+                <button class="remove-btn" type="button"></button>
+
                 <img src="img/item_2_small.png" height="33" width="33" alt="мини фото товара 2"/>
 
                 <span>Клубничный пломбир с присыпкой из белого шоколада</span>
@@ -133,9 +137,9 @@
                 <span>750 руб.</span>
               </div>
 
-              <button class="gl-btn buy-btn" type="submit">Оформить заказ</button>
+              <a class="gl-btn buy-btn">Оформить заказ</a>
             </div>
-          </form>
+          </div>
         </li>
       </ul>
 
@@ -533,7 +537,7 @@
           </svg>
         </a>
 
-        <small class="academy-text">Сделано в HTML Academy © 2019</small>
+        <small class="academy-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</small>
       </div>
     </footer>
   </body>

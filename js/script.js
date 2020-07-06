@@ -95,7 +95,7 @@ messageForm.addEventListener('submit', function (e) {
   }
 });
 
-window.addEventListener("keydown", function (e) {
+window.addEventListener('keydown', function (e) {
   if (e.keyCode === 27) {
     if (messagePopupElement.classList.contains('popup-show')) {
       e.preventDefault();

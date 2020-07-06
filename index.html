@@ -54,11 +54,11 @@
       <ul class="header-login-menu">
         <li class="login-menu-item">
           <form action="https://echo.htmlacademy.ru" class="search-form" method="get">
+            <a class="login-menu-btn search-btn" aria-label="Найти на сайте"></a>
+
             <label for="search-on-document" class="visually-hidden">Поиск на сайте</label>
 
             <input id="search-on-document" class="search-field" type="search" placeholder="Крем-брюле">
-
-            <button class="login-menu-btn search-btn" type="submit" aria-label="Найти"></button>
           </form>
         </li>
 
@@ -322,24 +322,26 @@
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.32085871635206!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1593672160576!5m2!1sru!2sru" tabindex="0"></iframe>
 
-        <img src="img/map.jpg" height="430" width="1200" alt="Офис компании по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург"/>
+        <div class="container map-container">
+          <img src="img/map.jpg" height="430" width="1200" alt="Офис компании по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург"/>
 
-        <div class="contact-field">
-          <p class="contact-text">Адрес главного офиса<br>
-            и офлайн-магазина:
-          </p>
+          <div class="contact-field">
+            <p class="contact-text">Адрес главного офиса<br>
+              и офлайн-магазина:
+            </p>
 
-          <p class="contact-adress">ул. Большая Конюшенная,
-            19/8, Санкт-Петербург
-          </p>
+            <p class="contact-address">ул. Большая Конюшенная,
+              19/8, Санкт-Петербург
+            </p>
 
-          <p class="contact-text">Для заказов по телефону:</p>
+            <p class="contact-text">Для заказов по телефону:</p>
 
-          <a class="contact-phone-reff" href="tel:88124502525">8 812 450-25-25</a>
+            <a class="contact-phone-reff" href="tel:88124502525">8 812 450-25-25</a>
 
-          <p class="contact-text">(с 10 до 20 ежедневно)</p>
+            <p class="contact-text">(с 10 до 20 ежедневно)</p>
 
-          <button class="gl-btn feedback-btn js-subscribe">Форма обратной связи</button>
+            <a class="gl-btn feedback-btn js-subscribe" href="#">Форма обратной связи</a>
+          </div>
         </div>
       </section>
     </main>
@@ -368,7 +370,7 @@
           </svg>
         </a>
 
-        <small class="academy-text">Сделано в HTML Academy © 2019</small>
+        <small class="academy-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</small>
       </div>
     </footer>
 
