@@ -176,7 +176,7 @@ img {
 
 .page-wrapper-1 {
   background-color: var(--background-green);
-  background-image: url("../img/group 1.png");
+  background-image: url("../img/group-1.png");
 }
 
 .catalog-wrapper-1 {
@@ -185,12 +185,12 @@ img {
 
 .page-wrapper-2 {
   background-color: var(--background-gray);
-  background-image: url("../img/group 2.png");
+  background-image: url("../img/group-2.png");
 }
 
 .page-wrapper-3 {
   background-color: var(--background-red);
-  background-image: url("../img/group 3.png");
+  background-image: url("../img/group-3.png");
 }
 
 /* Main header */
@@ -214,6 +214,7 @@ img {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   margin-top: 9px;
+  vertical-align: baseline;
 }
 
 .main-logo:focus > .logo-svg g,
@@ -262,6 +263,7 @@ img {
   font-weight: bold;
   line-height: 18px;
   color: var(--basic-white);
+  vertical-align: baseline;
 
   -webkit-text-decoration: underline solid var(--opacity-white-02);
 
@@ -1139,6 +1141,7 @@ img {
   box-shadow: 0 2px 2px var(--opacity-red-064);
 
   border-radius: 70px;
+  vertical-align: baseline;
 }
 
 /*Product HIT*/
@@ -2027,6 +2030,7 @@ img {
   line-height: 26px;
   color: var(--basic-white);
   text-align: center;
+  vertical-align: baseline;
 }
 
 .go-back,
