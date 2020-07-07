@@ -53,9 +53,9 @@
 
       <ul class="header-login-menu">
         <li class="login-menu-item">
-          <form action="https://echo.htmlacademy.ru" class="search-form" method="get">
-            <a class="login-menu-btn search-btn" aria-label="Найти на сайте"></a>
+          <a class="login-menu-btn search-btn" aria-label="Найти на сайте"></a>
 
+          <form action="https://echo.htmlacademy.ru" class="search-form" method="get">
             <label for="search-on-document" class="visually-hidden">Поиск на сайте</label>
 
             <input id="search-on-document" class="search-field" type="search" placeholder="Крем-брюле">
@@ -63,14 +63,14 @@
         </li>
 
         <li class="login-menu-item">
-          <button class="login-menu-btn login-btn" type="button">Вход</button>
+          <a class="login-menu-btn login-btn" href="#">Вход</a>
 
           <form action="https://echo.htmlacademy.ru" class="login-form" method="get">
             <label for="login-email" class="visually-hidden">Вход в личный кабинет</label>
 
             <input id="login-email" class="text-field" type="email" placeholder="email@example.com">
 
-            <label for="login-password" class="visually-hidden">Поиск на сайте</label>
+            <label for="login-password" class="visually-hidden">Пароль</label>
 
             <input id="login-password" class="text-field" type="email" placeholder="......">
 
@@ -85,46 +85,8 @@
         </li>
 
         <li class="login-menu-item">
-          <button class="login-menu-btn basket-btn" type="button">Пусто</button>
-
-          <form action="https://echo.htmlacademy.ru" class="basket-form" method="get">
-            <ul class="product-items-list">
-              <li class="product-item-basket">
-                <img src="img/item_1_small.png" height="33" width="33" alt="мини фото товара 1"/>
-
-                <span>Пломбир с апельсиновым джемом</span>
-
-                <span class="qty-product">1,5 кг х&nbsp;</span>
-
-                <span class="item-price">200 руб.</span>
-
-                <span class="total-amount">300 руб.</span>
-              </li>
-
-              <li class="product-item-basket">
-                <img src="img/item_2_small.png" height="33" width="33" alt="мини фото товара 2"/>
-
-                <span>Клубничный пломбир с присыпкой из белого шоколада</span>
-
-                <span class="qty-product">1,5 кг х&nbsp;</span>
-
-                <span class="item-price">300 руб.</span>
-
-                <span class="total-amount">450 руб.</span>
-              </li>
-            </ul>
-
-            <div class="product-order">
-              <div class="total-price">
-                <span>Итого:&nbsp;</span>
-
-                <span>750 руб.</span>
-              </div>
-
-              <button class="gl-btn buy-btn" type="submit">Оформить заказ</button>
-            </div>
-          </form>
-         </li>
+          <a class="login-menu-btn basket-btn" href="#">Пусто</a>
+        </li>
       </ul>
 
       <div class="header-contact">

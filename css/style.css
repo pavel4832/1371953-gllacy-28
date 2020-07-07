@@ -63,7 +63,7 @@
 
   --opacity-black-007: rgba(0, 0, 0, 0.07);
   --opacity-black-02: rgba(0, 0, 0, 0.2);
-  --opacity-black-03: rgba(0, 0, 0, 0.3);
+  --popup-background-03: rgba(0, 0, 0, 0.3);
   --opacity-black-04: rgba(0, 0, 0, 0.4);
   --opacity-gray-052: rgba(178, 178, 178, 0.52);
   --opacity-black-03: rgba(171, 171, 171, 0.3);
@@ -431,8 +431,8 @@ img {
   border-radius: 20px;
 }
 
-.login-menu-item:hover .login-menu-btn,
-.login-menu-btn:focus {
+.login-menu-item:hover .login-menu-btn:not(.basket-btn),
+.login-menu-btn:focus:not(.basket-btn) {
   color: var(--basic-dark);
 
   background-color: var(--basic-white);
@@ -440,14 +440,13 @@ img {
 
 .search-btn {
   display: inline-block;
-  position: absolute;
-  top: 0;
-  right: 10px;
   width: 32px;
+  margin-right: 10px;
   padding-top: 3px;
 
   vertical-align: baseline;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .login-menu-item:hover .search-btn {
@@ -470,8 +469,12 @@ img {
 }
 
 .login-btn {
-  width: 92px;
+  display: inline-block;
   margin-right: 10px;
+  padding: 0 16px;
+
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 .login-btn::before {
@@ -491,7 +494,11 @@ img {
 }
 
 .basket-btn {
-  width: 100px;
+  display: inline-block;
+  padding: 0 16px;
+
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 .basket-btn::before {
@@ -500,17 +507,20 @@ img {
 
   vertical-align: -11%;
 }
-
+/*
 .login-menu-item:hover .basket-btn::before,
 .basket-btn:focus::before {
   content: url("../img/basket_black.svg");
-}
+}*/
 
 .basket-btn.has-product {
-  width: 118px;
   color: var(--basic-dark);
 
   background-color: var(--basic-white);
+}
+
+.basket-btn:not(.has-product) {
+  cursor: default;
 }
 
 .basket-btn.has-product::before {
@@ -2251,20 +2261,7 @@ img {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: var(--opacity-black-03);
-  z-index: 10;
-}
-
-.map-popup-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
+  background-color: var(--popup-background-03);
   z-index: 10;
 }
 
