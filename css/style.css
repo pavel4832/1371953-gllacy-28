@@ -1145,7 +1145,7 @@ img {
 
 .product-hit {
   margin-top: 34px;
-  margin-bottom: 7px;
+  margin-bottom: 78px;
 }
 
 .product-list {
@@ -1166,9 +1166,12 @@ img {
   width: 267px;
   min-height: 320px;
   padding-top: 6px;
-  padding-bottom: 71px;
 
   background-color: transparent;
+}
+
+.product-item:hover {
+  z-index: 2;
 }
 
 .hit-wrapper::before {
@@ -1227,28 +1230,11 @@ img {
   line-height: 35px;
 }
 
-.under-hover {
-  position: absolute;
-  top: 0;
-  left: -13px;
-  display: none;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  width: 293px;
-  height: 100%;
-  padding-bottom: 21px;
-  background: var(--opacity-white-02);
-  box-shadow: 0 20px 20px var(--opacity-black-02);
-  border-radius: 4px;
-  box-sizing: border-box;
-  z-index: 5;
-}
-
 .show-btn {
-  position: relative;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
   padding: 11px 17px;
-  margin-top: 7px;
 
   line-height: 24px;
   text-align: center;
@@ -1257,8 +1243,25 @@ img {
   z-index: 6;
 }
 
-.product-item:hover .under-hover {
-  display: flex;
+.product-item:hover .show-btn {
+  display: block;
+  position: absolute;
+  bottom: -50px;
+  left: 32px;
+}
+
+.product-item:hover::after {
+  position: absolute;
+  content: "";
+  left: -13px;
+  top: 0px;
+  right: -13px;
+  bottom: -70px;
+  z-index: -1;
+  background: var(--opacity-white-02);
+  box-shadow: 0 20px 20px var(--opacity-black-02);
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 /*Section Shop-intro*/
