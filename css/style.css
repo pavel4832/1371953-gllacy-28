@@ -884,11 +884,7 @@ img {
   vertical-align: top;
 }
 
-.breadcrumbs-item:nth-child(2) {
-  margin-left: 5px;
-}
-
-.breadcrumbs-item:last-child {
+.breadcrumbs-item:nth-child(n+2) {
   margin-left: 5px;
 }
 
@@ -1009,7 +1005,7 @@ img {
   text-decoration: none;
   text-shadow: 0 2px 5px var(--opacity-red-076);
 
-  background: #f26843;
+  background: var(--basic-red-light);
   background: linear-gradient(180deg, var(--basic-red-light), var(--basic-red-dark));
 
   border-radius: 50px;
